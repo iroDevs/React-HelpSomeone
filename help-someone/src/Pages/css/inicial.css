@@ -1,10 +1,11 @@
 
+
 .left-button {
  
   position: absolute;
   bottom:50%;
   right: 50%;
-  margin-right: 10%;
+  margin-right: 15%;
   transform:translate(-50%,-50%)
 }
 
@@ -12,6 +13,13 @@
   width: 100vh;
   height: 100vh;
   background-color:rgb(233, 233, 233);
+}
+.right-side-text{
+  color: white;
+}
+
+.left-side-text {
+  color:rgb(32, 83, 252);
 }
 
 .right-side {
@@ -21,15 +29,20 @@
 }
 
 .right-button {
-  margin-left: 10%;
+  margin-left: 15%;
   position: absolute;
   bottom:50%;
   left: 50%;
-  transform:translate(50%,-50%)
+  transform:translate(50%,-50%);
 }
 
 .principal-page {
   display: flex;
   justify-content:center;
-  align-items: center; 
+  align-items: center;
+   
+}
+
+body {
+ overflow: hidden;
 }
