@@ -1,10 +1,21 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import Footer from '../Components/Footer'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
 
 export default function PrecisoDeAjuda() {
   return (
    <div>
-     preciso de ajuda page
+     <div className="Help-form">
+      <Form>
+
+        <label>
+          Nome:
+        </label>
+      </Form>
+      
+     </div>
+    <Footer></Footer>
    </div>
   )
 }
