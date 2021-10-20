@@ -2,20 +2,23 @@ import React, {useContext,useEffect,useState} from 'react'
 import Button from 'react-bootstrap/Button';
 import Footer from '../Components/Footer'
 import { useHistory } from "react-router-dom"
+import DataContext from '../Context/DataContext'
+
 
 import './css/inicial.css'
 
 
 
 export default function Inicial() {
-  const [profile , setProfile] = useState('')
+  const [profile , setProfile] = useState('');
+  
   let history = useHistory()
   function HandleClickNeedHelp(){
     history.push("/NeedHelp");
   }
 
   function HandleClickHelp(){
-    console.log("aaa");
+     history.push("/Help");
   }
   return (
     <div className="principal-page ">

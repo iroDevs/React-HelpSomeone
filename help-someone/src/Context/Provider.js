@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import RecipesContext from './RecipesContext';
+import RecipesContext from './DataContext';
 
 export default function Provider({ children }) {
-
+const [ajuda,setAjuda] = useState([])
 
   const contextValue = {
-   
+   ajuda,
   };
 
   return (
